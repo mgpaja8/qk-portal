@@ -1,0 +1,81 @@
+.row {
+  max-width: $grid-width;
+  margin: 0 auto;
+
+  &:not(:last-child) {
+    margin-bottom: $grid-vertical-space;
+  }
+
+  //selects all elements that has a class that starts with col-
+  [class^="col-"] {
+    float: left;
+    background-color: lightgrey;
+
+    &:not(:last-child) {
+      margin-right: $grid-horizontal-space;
+    }
+  }
+
+  //since we are floating elements we need to include clearfix
+  @include clearfix;
+
+  .col-1-2 {
+    width: calc((100% - #{$grid-horizontal-space}) / 2);
+  }
+
+  .col-1-3 {
+    width: calc((100% - 2 * #{$grid-horizontal-space}) / 3);
+  }
+
+  .col-2-3 {
+    width: calc((100% - 2 * #{$grid-horizontal-space}) *2 / 3 + #{$grid-horizontal-space});
+  }
+
+  .col-1-4 {
+    width: calc((100% - 3 * #{$grid-horizontal-space}) / 4);
+  }
+
+  .col-2-4 {
+    width: calc((100% - 3 * #{$grid-horizontal-space}) / 2 + #{$grid-horizontal-space});
+  }
+
+  .col-3-4 {
+    width: calc((100% - 3 * #{$grid-horizontal-space}) * 3 / 4 + 2 * #{$grid-horizontal-space});
+  }
+
+  .col-1-5 {
+    width: calc((100% - 4 * #{$grid-horizontal-space}) / 5);
+  }
+
+  .col-2-5 {
+    width: calc((100% - 4 * #{$grid-horizontal-space}) * 2 / 5 + #{$grid-horizontal-space});
+  }
+
+  .col-3-5 {
+    width: calc((100% - 4 * #{$grid-horizontal-space}) * 3 / 5 + 2 * #{$grid-horizontal-space});
+  }
+
+  .col-4-5 {
+    width: calc((100% - 4 * #{$grid-horizontal-space}) * 4 / 5 + 3 * #{$grid-horizontal-space});
+  }
+
+  .col-1-6 {
+    width: calc((100% - 5 * #{$grid-horizontal-space}) / 6 );
+  }
+
+  .col-2-6 {
+    width: calc((100% - 5 * #{$grid-horizontal-space}) * 2 / 6 + 1 * #{$grid-horizontal-space});
+  }
+
+  .col-3-6 {
+    width: calc((100% - 5 * #{$grid-horizontal-space}) * 3 / 6 + 2 * #{$grid-horizontal-space});
+  }
+
+  .col-4-6 {
+    width: calc((100% - 5 * #{$grid-horizontal-space}) * 4 / 6 + 3 * #{$grid-horizontal-space});
+  }
+
+  .col-5-6 {
+    width: calc((100% - 5 * #{$grid-horizontal-space}) * 5 / 6 + 4 * #{$grid-horizontal-space});
+  }
+}
