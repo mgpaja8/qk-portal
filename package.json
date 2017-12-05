@@ -6,7 +6,8 @@
   "scripts": {
     "start": "npm run build",
     "build": "webpack -d && webpack-dev-server --content-base public/ --inline --hot",
-    "build:prod": "webpack -p"
+    "build:prod": "webpack -p",
+    "watch:sass": "node-sass-chokidar sass/main.scss -o public/content --watch --recursive"
   },
   "author": "Pavle Milicevic",
   "license": "ISC",
@@ -25,8 +26,7 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
     "css-loader": "^0.28.7",
-    "sass-loader": "^6.0.6",
-    "style-loader": "^0.19.0",
+    "node-sass-chokidar": "0.0.3",
     "webpack": "^3.5.5",
     "webpack-dev-server": "^2.7.1"
   }
