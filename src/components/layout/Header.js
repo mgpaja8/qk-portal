@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import Actions from '../../actions/action-types';
 
 import Ionicon from 'react-ionicons';
+import UserAuth from './UserAuth';
 
 class Header extends Component {
   constructor(props) {
@@ -24,7 +25,7 @@ class Header extends Component {
       <header className="header">
         <Ionicon icon="md-menu" className="header__icon-menu" onClick={this.handleIconMenuClick}/>
         <img className="header__img" src="./content/img/logo.png" alt="Quality Kitchen" />
-        <div className="header__user">User</div>
+        <UserAuth />
       </header>
     );
   }

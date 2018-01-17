@@ -1,7 +1,7 @@
 import Actions from '../actions/action-types';
 
 let initialState = {
-  isOpen: true
+  isOpen: false
 };
 
 let navigationReducer = function(navigation = initialState, action) {

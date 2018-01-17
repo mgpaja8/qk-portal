@@ -80,6 +80,7 @@ body {
     height: 4rem;
     width: 4rem;
     fill: #F15F28;
+    cursor: pointer;
     transition: all 0.2s; }
     .header__icon-menu:hover {
       transform: scale(1.1); }
@@ -99,9 +100,32 @@ body {
     padding: 1rem; }
   .navigation__icon-close {
     align-self: flex-start;
-    fill: #FFFFFF; }
+    fill: #FFFFFF;
+    transition: all 0.2s; }
+    .navigation__icon-close:hover {
+      fill: #F15F28;
+      cursor: pointer;
+      transform: scale(1.2); }
   .navigation__text {
     flex: 1;
+    cursor: default;
     text-align: center;
     font-size: 3rem;
     color: #FFFFFF; }
+
+.userAuth {
+  display: flex;
+  align-items: center;
+  transition: all 0.2s; }
+  .userAuth:hover {
+    cursor: pointer;
+    transform: scale(1.1); }
+  .userAuth *:not(:last-child) {
+    margin-right: 1rem; }
+  .userAuth__icon-person {
+    height: 2rem;
+    width: 2rem;
+    fill: #F15F28; }
+  .userAuth__text {
+    font-size: 1.6rem;
+    color: #F15F28; }

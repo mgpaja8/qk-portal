@@ -1,0 +1,27 @@
+.userAuth {
+  display: flex;
+  align-items: center;
+
+  transition: all 0.2s;
+
+  &:hover {
+    cursor: pointer;
+
+    transform: scale(1.1);
+  }
+
+  *:not(:last-child) {
+    margin-right: 1rem;
+  }
+
+  &__icon-person {
+    height: 2rem;
+    width: 2rem;
+    fill: $color-primary;
+  }
+
+  &__text{
+    font-size: 1.6rem;
+    color: $color-primary;
+  }
+}
