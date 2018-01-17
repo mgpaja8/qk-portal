@@ -11,7 +11,19 @@
     height: $height-logo;
   }
 
-  &__headar {
+  &__icon {
+    height: 4rem;
+    width: 4rem;
+    fill: $color-primary;
+
+    transition: all 0.2s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &__header {
 
   }
 

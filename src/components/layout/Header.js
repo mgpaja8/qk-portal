@@ -1,15 +1,12 @@
 import React, { Component } from 'react';
-
-import BurgerMenu from './BurgerMenu';
+import Ionicon from 'react-ionicons';
 
 class Header extends Component {
   render() {
     return (
       <header className="header">
-        <BurgerMenu />
-        <div className="header__header">
-          <img className="header__img" src="./content/img/logo.png" alt="Quality Kitchen" />
-        </div>
+        <Ionicon icon="md-menu" className="header__icon" />
+        <img className="header__img" src="./content/img/logo.png" alt="Quality Kitchen" />
         <div className="header__user">User</div>
       </header>
     );
