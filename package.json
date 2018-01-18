@@ -7,6 +7,7 @@
     "start": "npm run build",
     "build": "webpack -d && webpack-dev-server --content-base public/ --inline --hot",
     "build:prod": "webpack -p",
+    "build:prod:sass": "node-sass-chokidar sass/main.scss -o public/content",
     "watch:sass": "node-sass-chokidar sass/main.scss -o public/content --watch --recursive"
   },
   "author": "Pavle Milicevic",
